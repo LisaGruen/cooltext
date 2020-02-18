@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+
+body {
+  background: #85dcb1;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #2c756b;
+  font-size: 5vw;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.box {
+  margin-top: 50px;
+  background-color: #41b3a3;
+  height: 10rem;
+  box-shadow: 5px 10px 20px #2c756b;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 1fr 40px;
+  grid-template-rows: 30px 20% 100px auto 20px;
+}
+
+.item1 {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: 1;
+  grid-row-end: row1-end;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: third-line;
+  grid-row-end: last-line;
+}
+#cooltext {
+  margin-left: 40px;
+}
+/*Animation*/
+.cool-animation {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  animation: cool-animation 0.5s;
+}
+@keyframes cool-animation {
+  from {
+    bottom: -4rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-family: "Playfair Display", serif;
+    color: #2c756b;
+    font-size: 4vw;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1em;
+  }
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+  .box {
+    background-color: #41b3a3;
+    height: 5rem;
+    width: 100%;
+    box-shadow: 5px 10px 20px #2c756b;
+  }
+}
